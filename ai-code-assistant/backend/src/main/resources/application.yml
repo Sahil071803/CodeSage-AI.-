@@ -1,0 +1,28 @@
+
+spring:
+  application:
+    name: codesage-backend
+  servlet:
+    multipart:
+      max-file-size: 12MB
+      max-request-size: 20MB
+
+server:
+  port: 9090
+
+app:
+  cors:
+    allowed-origins: http://localhost:5173,http://localhost:5174,http://localhost:5199,http://localhost:4173
+
+openrouter:
+  api-key: ${OPENROUTER_API_KEY}
+  base-url: https://openrouter.ai/api/v1
+  model: ${OPENROUTER_MODEL:minimax/minimax-m3.1-flash:free}
+  temperature: 0.2
+  max-tokens: 1600
+  timeout-seconds: 90
+
+rag:
+  max-chunks: 4
+  max-chars: 900
+  min-score: 0.14

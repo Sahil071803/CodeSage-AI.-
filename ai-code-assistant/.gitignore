@@ -1,0 +1,18 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+.env
+.env.*
+!.env.example
+
+# Backend (Java / Spring Boot)
+backend/target/
+backend/build/
+backend/.gradle/
+*.class
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+*.log
